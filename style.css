@@ -1,0 +1,98 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/*viib pildi k천ige alla, vaata ka html failist sinna tegid uue div'i selle kohta, enne oli pilt listi all*/
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+body{
+	font-family: helvetica, Arial, sans-serif;
+}
+h1, h2{
+	color: #ff00ff;
+}
+
+h1{
+	
+	font-size: 40px;
+	margin-bottom: 20px;
+
+}
+
+h2{
+	
+	font-size: 25px;
+	margin-bottom: 10px;
+
+}
+
+.main-text {
+	text-align: justify;
+	margin-bottom: 20px;
+
+}
+
+.container{
+	width: 1140px;
+	/*kommentaar: margin top right bottom left*/
+	margin: 40px auto 0 auto;
+}
+
+.blog-posts, .other-posts {
+	float: left;
+
+}
+.blog-posts{
+	width: 75% /*t천mbab 75% kokkupoole, v천tab selle 75% containeri laiusest kokku ehk sellest 1140px'st*/;
+	padding-right: 40px;
+	position: relative;
+	/*background-color: pink;*/
+	
+
+}
+
+.other-posts{
+	width: 25%;
+	/*background-color: green;*/
+	
+
+}
+#body-img {
+	height: 400px;
+	width: auto;
+	margin: 20px;
+}
+
+/*selle klassi sees olevad list elemendid (eemaldab kõigilt punktid tagant)*/
+.posts-list li {
+    list-style: none;
+	margin-top: 15px;
+	
+}
+.author-box img{
+	height: 100px;
+	width: auto;
+	border-radius: 50%;
+	float: left;
+}
+/*lisab vahejoone pildi üles*/
+.author-box{
+	border-top: 1px solid #808080;
+	padding-top: 20px;
+}
+#author-name {
+	font-size: 22px;
+	margin-top: 30px;
+	margin-left: 10px;
+	float: left;
+}
+.date {
+	position: absolute;
+	top: 10px;
+	right: 40px;
+}
